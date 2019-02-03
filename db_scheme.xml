@@ -44,4 +44,22 @@
 <part>id</part>
 </key>
 </table>
+<table x="830" y="238" name="posts">
+<row name="id" null="1" autoincrement="1">
+<datatype>sa.Integer</datatype>
+<default>NULL</default></row>
+<row name="body" null="1" autoincrement="0">
+<datatype>sa.String(140)</datatype>
+<default>NULL</default></row>
+<row name="timestamp" null="1" autoincrement="0">
+<datatype>sa.DateTime</datatype>
+<default>NULL</default></row>
+<row name="user_id" null="1" autoincrement="0">
+<datatype>sa.Integer</datatype>
+<default>NULL</default><relation table="users" row="id" />
+</row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
 </sql>
